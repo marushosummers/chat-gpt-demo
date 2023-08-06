@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "chat-gpt-demo"
+version = "0.1.0"
+description = ""
+authors = ["marusho <mrsho34@gmail.com>"]
+readme = "README.md"
+packages = [{include = "chat_gpt_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.25.0"
+langchain = "^0.0.253"
+openai = "^0.27.8"
+streamlit-chat = "^0.1.1"
+bs4 = "^0.0.1"
+youtube-transcript-api = "^0.6.1"
+pytube = "^15.0.0"
+tiktoken = "^0.4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.4.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
